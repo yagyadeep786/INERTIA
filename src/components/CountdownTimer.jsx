@@ -3,11 +3,19 @@ import { motion } from 'framer-motion';
 import { Clock } from 'lucide-react';
 
 const CountdownTimer = () => {
+  // today date
+  let todayDate = new Date();
+  let eventDate = new Date("2025-02-22"); // Assuming the event date is December 15, 2024
+  let diffTime = Math.abs(eventDate - todayDate);
+  let diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  let diffHours= Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let diffMinutes= Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
+  let diffSeconds= Math.floor((diffTime % (1000 * 60)) / 1000);
   const [timeLeft, setTimeLeft] = useState({
-    days: 22,
-    hours: 10,
-    minutes: 50,
-    seconds: 10
+    days: diffDays,
+    hours: diffHours,
+    minutes: diffMinutes,
+    seconds: diffSeconds
   });
 
   useEffect(() => {
