@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Calendar, Users, Award, Play, CheckCircle } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
-
+//comment 
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
