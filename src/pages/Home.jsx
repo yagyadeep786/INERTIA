@@ -60,14 +60,15 @@ const Home = () => {
               className="text-5xl md:text-6xl font-bold leading-tight"
             >
               Where Innovation
-              <span className="text-sky-400"> Dipansh</span>
+              <span className="text-sky-400"> Meets Excellence</span>
             </motion.h1>
             <motion.p
               variants={itemVariants}
               className="text-xl text-gray-300"
             >
-              Join us for an extraordinary journey of learning, collaboration, and
-              innovation at the most anticipated tech event of the year.
+              "Ready to be inspired? Join us at the most electrifying tech event of the 
+              year where minds meet,
+               ideas ignite, and possibilities are limitless!"
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -112,8 +113,8 @@ const Home = () => {
               <div className="flex items-center space-x-4 text-white">
                 <Sparkles className="w-8 h-8 text-sky-400" />
                 <div>
-                  <p className="font-semibold">Next Event</p>
-                  <p className="text-sm text-gray-300">December 15, 2024</p>
+                  <p className="font-semibold"> Event</p>
+                  <p className="text-sm text-gray-300">Feburary 21-22, 2025</p>
                 </div>
               </div>
             </motion.div>
@@ -145,20 +146,22 @@ const Home = () => {
                 variants={itemVariants}
                 className="text-4xl font-bold text-white"
               >
-                About <span className="text-sky-400">TechEvent 2024</span>
+                About <span className="text-sky-400">INERTIA 2025</span>
               </motion.h2>
               <motion.p 
                 variants={itemVariants}
                 className="text-gray-300 text-lg"
               >
-                TechEvent 2024 is the premier technology conference bringing together industry leaders, innovators, and enthusiasts. Over three days, you'll experience cutting-edge presentations, hands-on workshops, and unparalleled networking opportunities.
+             "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry 
+             experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional 
+             networking experiences that redefine the future of technology."
               </motion.p>
               <motion.div 
                 variants={itemVariants}
                 className="space-y-4"
               >
                 {[
-                  "50+ Expert Speakers",
+                  "7+ Expert Speakers",
                   "Interactive Workshops",
                   "Networking Sessions",
                   "Innovation Showcase",
@@ -175,15 +178,15 @@ const Home = () => {
                 className="grid grid-cols-3 gap-6 pt-6"
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-sky-400">3000+</div>
+                  <div className="text-3xl font-bold text-sky-400">500+</div>
                   <div className="text-sm text-gray-300">Attendees</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-sky-400">50+</div>
+                  <div className="text-3xl font-bold text-sky-400">7+</div>
                   <div className="text-sm text-gray-300">Speakers</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-sky-400">30+</div>
+                  <div className="text-3xl font-bold text-sky-400">6+</div>
                   <div className="text-sm text-gray-300">Workshops</div>
                 </div>
               </motion.div>

@@ -6,33 +6,33 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Tech Innovation Summit",
+      title: "Tech WorkShop",
       image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-      date: "March 15, 2024",
-      time: "9:00 AM - 5:00 PM",
-      location: "Tech Convention Center",
+      date: "Feburary 21, 2025",
+      time: "11:00 AM - 1:00 PM",
+      location: "JASAN HALL",
       description: "Join industry leaders for a day of insights into emerging technologies and future trends.",
-      attendees: 500
+      attendees: 400
     },
     {
       id: 2,
-      title: "AI & Machine Learning Conference",
+      title: "Startup Launching",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
-      date: "April 2, 2024",
-      time: "10:00 AM - 4:00 PM",
-      location: "Digital Innovation Hub",
-      description: "Explore the latest developments in AI and machine learning with expert speakers.",
-      attendees: 300
+      date: "Feburary 22, 2025",
+      time: "10:00 AM - 1:00 PM",
+      location: "Jasan Hall",
+      description: "Introducing a new era of innovation! Join us as we launch new startup's of jabalpur, unveil groundbreaking ideas.",
+      attendees: 200
     },
     {
       id: 3,
-      title: "Web3 Developer Meetup",
+      title: " Culture Showcase",
       image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80",
-      date: "April 20, 2024",
-      time: "2:00 PM - 6:00 PM",
-      location: "Blockchain Center",
-      description: "Connect with Web3 developers and learn about the future of decentralized applications.",
-      attendees: 200
+      date: "Feburary 22, 2025",
+      time: "3:00 PM - 6:00 PM",
+      location: "Assembly Hall",
+      description: "Get ready to lose yourself in the magic of melodies, electrifying dance moves, and soulful songs at Rhythm & Beats. Experience a vibrant fusion of cultures, emotions, and artistry as performers light up the stage with their passion.",
+      attendees: 600
     }
   ];
 

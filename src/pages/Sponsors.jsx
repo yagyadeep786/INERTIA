@@ -1,39 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Globe, MapPin, ExternalLink } from 'lucide-react';
 
 const Sponsors = () => {
   const sponsors = [
     {
       id: 1,
-      name: "TechCorp Solutions",
+      name: "FUNINGO",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      description: "A leading provider of enterprise software solutions, specializing in cloud computing and artificial intelligence. Supporting innovation and technological advancement in the developer community.",
-      website: "www.techcorp.com",
-      email: "partnerships@techcorp.com",
-      address: "123 Innovation Drive, Silicon Valley, CA",
-      tier: "Platinum"
+      description: "We are thrilled to have Funingo Adventure Arena as our official entertainment partner, the ultimate destination for thrill-seekers and fun enthusiasts. Known for its dynamic range of adventure activities.",
+      website: "https://www.funingo.fun/",
+      address: "Jabalpur-Nagpur Rd, Manegaon, M.P",
     },
     {
       id: 2,
-      name: "Future Labs",
+      name: "TRIUMPH MOTORS",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-      description: "An innovative research and development company focused on emerging technologies. Committed to fostering the next generation of tech leaders through education and mentorship.",
-      website: "www.futurelabs.tech",
-      email: "contact@futurelabs.tech",
-      address: "456 Tech Park Avenue, Boston, MA",
-      tier: "Gold"
+      description: "Frontier Triumph Jabalpur is part of Frontier Motors group and provides customers with first-class service in and around Jabalpur, Madhya Pradesh. This stylish store is conveniently located near Madan Mahal Railway station, providing customers with the full range of Triumph services including new bike sales, service, parts, clothing, and accessories.",
+      website: "https://www.triumphmotorcycles.in",
+      address: "140/1 Amanpur Mouja, Near Dasmesh Dwar, Nagpur Rd, Madan Mahal",
     },
-    {
-      id: 3,
-      name: "Digital Dynamics",
-      image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=800&q=80",
-      description: "A global digital transformation consultancy helping businesses innovate and grow. Passionate about supporting tech events and fostering community collaboration.",
-      website: "www.digitaldynamics.io",
-      email: "sponsors@digitaldynamics.io",
-      address: "789 Digital Boulevard, Austin, TX",
-      tier: "Silver"
-    }
   ];
 
   const containerVariants = {
@@ -103,7 +89,7 @@ const Sponsors = () => {
                     </div>
                     <div className="space-y-4">
                       <motion.a
-                        href={`https://${sponsor.website}`}
+                        href={sponsor.website}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-gray-300 hover:text-sky-400 transition-colors"
@@ -112,10 +98,6 @@ const Sponsors = () => {
                         <span>{sponsor.website}</span>
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </motion.a>
-                      <div className="flex items-center text-gray-300">
-                        <Mail className="w-5 h-5 mr-2 text-sky-400" />
-                        <span>{sponsor.email}</span>
-                      </div>
                       <div className="flex items-center text-gray-300">
                         <MapPin className="w-5 h-5 mr-2 text-sky-400" />
                         <span>{sponsor.address}</span>
