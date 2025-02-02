@@ -60,7 +60,7 @@ const Home = () => {
               className="text-5xl md:text-6xl font-bold leading-tight"
             >
               Where Innovation
-              <span className="text-sky-400"> Meets Excellence</span>
+              <span className="text-sky-400"> Dipansh</span>
             </motion.h1>
             <motion.p
               variants={itemVariants}
