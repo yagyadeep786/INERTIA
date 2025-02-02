@@ -1,13 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
+import WorkshopImage1 from "../assets/4.png"; 
+import WorkshopImage2 from "../assets/3.png";
+import WorkshopImage3 from "../assets/5.png";
 
 const Workshop = () => {
   const workshops = [
     {
       id: 1,
       title: "Introduction to React Development",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+      // image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+      image: WorkshopImage1,
       date: "March 20, 2024",
       time: "10:00 AM - 2:00 PM",
       location: "Virtual Workshop",
@@ -18,7 +22,8 @@ const Workshop = () => {
     {
       id: 2,
       title: "Advanced Cloud Architecture",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+      image: WorkshopImage2,
+      // image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
       date: "April 5, 2024",
       time: "9:00 AM - 5:00 PM",
       location: "Tech Hub - Room 201",
@@ -29,7 +34,8 @@ const Workshop = () => {
     {
       id: 3,
       title: "UI/UX Design Masterclass",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+      image: WorkshopImage3,
+      // image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
       date: "April 15, 2024",
       time: "1:00 PM - 5:00 PM",
       location: "Design Studio",
