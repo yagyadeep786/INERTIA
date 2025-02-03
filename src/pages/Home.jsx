@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Calendar, Users, Award, Play, CheckCircle } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 
+import Vedio1 from '../assets/inertia4343.mov'
+import techEventImage from "../assets/7.png"; 
+
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -66,8 +69,9 @@ const Home = () => {
               variants={itemVariants}
               className="text-xl text-gray-300"
             >
-              Join us for an extraordinary journey of learning, collaboration, and
-              innovation at the most anticipated tech event of the year.
+
+              Be part of an exciting voyage of learning, discovery, and groundbreaking innovation at Inertia 2025!
+
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -97,7 +101,8 @@ const Home = () => {
             className="relative"
           >
             <motion.img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+              // src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+              src={techEventImage} 
               alt="Tech Event"
               className="rounded-lg shadow-2xl"
               whileHover={{ scale: 1.02 }}
@@ -112,8 +117,10 @@ const Home = () => {
               <div className="flex items-center space-x-4 text-white">
                 <Sparkles className="w-8 h-8 text-sky-400" />
                 <div>
+                  <p className="font-semibold"> Event</p>
+                  <p className="text-sm text-gray-300">Feburary 21-22, 2025</p>
                   <p className="font-semibold">Next Event</p>
-                  <p className="text-sm text-gray-300">December 15, 2024</p>
+                  <p className="text-sm text-gray-300">To Be Announced</p>
                 </div>
               </div>
             </motion.div>
@@ -145,24 +152,31 @@ const Home = () => {
                 variants={itemVariants}
                 className="text-4xl font-bold text-white"
               >
-                About <span className="text-sky-400">TechEvent 2024</span>
+                About <span className="text-sky-400">INERTIA 2025</span>
+                About <span className="text-sky-400">Inertia 2025</span>
               </motion.h2>
               <motion.p 
                 variants={itemVariants}
                 className="text-gray-300 text-lg"
               >
-                TechEvent 2024 is the premier technology conference bringing together industry leaders, innovators, and enthusiasts. Over three days, you'll experience cutting-edge presentations, hands-on workshops, and unparalleled networking opportunities.
+             "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry 
+             experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional 
+             networking experiences that redefine the future of technology."
+                Inertia 2025 is the ultimate tech fest where innovation gains momentum! Experience groundbreaking ideas,
+                 hands-on workshops, and inspiring talks from industry leaders.
+                 Whether you're a creator, coder, or tech enthusiast, this is your platform to showcase, learn, and connect.
               </motion.p>
               <motion.div 
                 variants={itemVariants}
                 className="space-y-4"
               >
                 {[
-                  "50+ Expert Speakers",
+                  "7+ Expert Speakers",
+                  "Inspiring Guest Speakers",
                   "Interactive Workshops",
                   "Networking Sessions",
                   "Innovation Showcase",
-                  "Career Fair"
+                  "Top Sponsors & Collaborations"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-sky-400" />
@@ -175,15 +189,15 @@ const Home = () => {
                 className="grid grid-cols-3 gap-6 pt-6"
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-sky-400">3000+</div>
+                  <div className="text-3xl font-bold text-sky-400">500+</div>
                   <div className="text-sm text-gray-300">Attendees</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-sky-400">50+</div>
+                  <div className="text-3xl font-bold text-sky-400">7+</div>
                   <div className="text-sm text-gray-300">Speakers</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-sky-400">30+</div>
+                  <div className="text-3xl font-bold text-sky-400">6+</div>
                   <div className="text-sm text-gray-300">Workshops</div>
                 </div>
               </motion.div>
@@ -192,19 +206,19 @@ const Home = () => {
             <motion.div 
               variants={itemVariants}
               className="relative aspect-video rounded-lg overflow-hidden bg-white/10 backdrop-blur-lg"
-            >
-              <iframe
+            > 
+              
+              <video
                 className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Event Preview"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40 group hover:bg-black/30 transition-colors cursor-pointer">
+                src={Vedio1}
+                controls 
+
+              ></video>
+              {/* <div className="absolute inset-0 flex items-center justify-center bg-black/40 group hover:bg-black/30 transition-colors cursor-pointer">
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-500/90 text-white group-hover:bg-sky-400 transition-colors">
                   <Play className="w-6 h-6" />
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </motion.div>
