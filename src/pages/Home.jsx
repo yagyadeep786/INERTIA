@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Calendar, Users, Award, Play, CheckCircle } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
-
+import Vedio1 from '../assets/inertia4343.mov'
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -195,19 +195,19 @@ const Home = () => {
             <motion.div 
               variants={itemVariants}
               className="relative aspect-video rounded-lg overflow-hidden bg-white/10 backdrop-blur-lg"
-            >
-              <iframe
+            > 
+              
+              <video
                 className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Event Preview"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40 group hover:bg-black/30 transition-colors cursor-pointer">
+                src={Vedio1}
+                controls 
+
+              ></video>
+              {/* <div className="absolute inset-0 flex items-center justify-center bg-black/40 group hover:bg-black/30 transition-colors cursor-pointer">
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-500/90 text-white group-hover:bg-sky-400 transition-colors">
                   <Play className="w-6 h-6" />
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </motion.div>

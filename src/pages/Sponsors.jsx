@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Globe, MapPin, ExternalLink } from 'lucide-react';
-
+import Sponse1 from '../assets/funingo.jpg';
+import Sponse2 from '../assets/Triumph-Motorcycles-Logo.png'
 const Sponsors = () => {
   const sponsors = [
     {
       id: 1,
       name: "FUNINGO",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      image: Sponse1,
       description: "We are thrilled to have Funingo Adventure Arena as our official entertainment partner, the ultimate destination for thrill-seekers and fun enthusiasts. Known for its dynamic range of adventure activities.",
       website: "https://www.funingo.fun/",
       address: "Jabalpur-Nagpur Rd, Manegaon, M.P",
@@ -15,7 +16,7 @@ const Sponsors = () => {
     {
       id: 2,
       name: "TRIUMPH MOTORS",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      image: Sponse2,
       description: "Frontier Triumph Jabalpur is part of Frontier Motors group and provides customers with first-class service in and around Jabalpur, Madhya Pradesh. This stylish store is conveniently located near Madan Mahal Railway station, providing customers with the full range of Triumph services including new bike sales, service, parts, clothing, and accessories.",
       website: "https://www.triumphmotorcycles.in",
       address: "140/1 Amanpur Mouja, Near Dasmesh Dwar, Nagpur Rd, Madan Mahal",
