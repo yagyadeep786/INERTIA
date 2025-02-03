@@ -15,12 +15,17 @@ const Navbar = () => {
           <div className="flex items-center space-x-0">
               <img src={logonn} alt="Logo" className="w-[100px]" /> 
               {/* Adjust 'h-10' for height as needed */}
+            <div className="flex items-center space-x-2">
+              <Rocket className="h-8 w-8 text-sky-400" />
+              <span className="text-white font-bold text-xl">
+                Inertia 2025
+              </span>
             </div>
           
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            {['Workshop', 'Events', 'Team', 'Sponsors', 'Contact'].map((item) => (
+            {['Gallery', 'Events', 'Team', 'Sponsors', 'Contact'].map((item) => (
               <Link
                 key={item}
                 to={item.toLowerCase()}
