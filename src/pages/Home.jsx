@@ -2,7 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Calendar, Users, Award, Play, CheckCircle } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
+
 import Vedio1 from '../assets/inertia4343.mov'
+import techEventImage from "../assets/7.png"; 
+
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -66,9 +69,9 @@ const Home = () => {
               variants={itemVariants}
               className="text-xl text-gray-300"
             >
-              "Ready to be inspired? Join us at the most electrifying tech event of the 
-              year where minds meet,
-               ideas ignite, and possibilities are limitless!"
+
+              Be part of an exciting voyage of learning, discovery, and groundbreaking innovation at Inertia 2025!
+
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -98,7 +101,8 @@ const Home = () => {
             className="relative"
           >
             <motion.img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+              // src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+              src={techEventImage} 
               alt="Tech Event"
               className="rounded-lg shadow-2xl"
               whileHover={{ scale: 1.02 }}
@@ -115,6 +119,8 @@ const Home = () => {
                 <div>
                   <p className="font-semibold"> Event</p>
                   <p className="text-sm text-gray-300">Feburary 21-22, 2025</p>
+                  <p className="font-semibold">Next Event</p>
+                  <p className="text-sm text-gray-300">To Be Announced</p>
                 </div>
               </div>
             </motion.div>
@@ -147,6 +153,7 @@ const Home = () => {
                 className="text-4xl font-bold text-white"
               >
                 About <span className="text-sky-400">INERTIA 2025</span>
+                About <span className="text-sky-400">Inertia 2025</span>
               </motion.h2>
               <motion.p 
                 variants={itemVariants}
@@ -155,6 +162,9 @@ const Home = () => {
              "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry 
              experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional 
              networking experiences that redefine the future of technology."
+                Inertia 2025 is the ultimate tech fest where innovation gains momentum! Experience groundbreaking ideas,
+                 hands-on workshops, and inspiring talks from industry leaders.
+                 Whether you're a creator, coder, or tech enthusiast, this is your platform to showcase, learn, and connect.
               </motion.p>
               <motion.div 
                 variants={itemVariants}
@@ -162,10 +172,11 @@ const Home = () => {
               >
                 {[
                   "7+ Expert Speakers",
+                  "Inspiring Guest Speakers",
                   "Interactive Workshops",
                   "Networking Sessions",
                   "Innovation Showcase",
-                  "Career Fair"
+                  "Top Sponsors & Collaborations"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-sky-400" />

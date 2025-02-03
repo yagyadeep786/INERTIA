@@ -6,8 +6,8 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Lead Developer",
+      name: "Dr. Anubha Maheshwari",
+      role: "Mentor",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
       description: "Full-stack developer with 8+ years of experience in building scalable web applications. Passionate about clean code and mentoring junior developers.",
       github: "https://github.com/sarahjohnson",
@@ -16,8 +16,8 @@ const Team = () => {
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "UI/UX Designer",
+      name: "Dr. Sanjay Soni",
+      role: "Mentor",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
       description: "Creative designer with a keen eye for detail and user experience. Specializes in creating intuitive and beautiful interfaces that users love.",
       github: "https://github.com/michaelchen",
@@ -26,9 +26,9 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Project Manager",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80",
+      name: "Gurdeep Singh Oberoi",
+      role: "Convener",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
       description: "Experienced project manager with a track record of delivering successful tech events and workshops. Expert in agile methodologies.",
       github: "https://github.com/emilyrodriguez",
       linkedin: "https://linkedin.com/in/emilyrodriguez",
@@ -36,8 +36,8 @@ const Team = () => {
     },
     {
       id: 4,
-      name: "David Kim",
-      role: "Technical Architect",
+      name: "Shubhanshu Pandey",
+      role: "Co-Convener",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
       description: "Solutions architect specializing in cloud infrastructure and scalable systems. Passionate about emerging technologies and innovation.",
       github: "https://github.com/davidkim",
