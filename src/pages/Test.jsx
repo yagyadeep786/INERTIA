@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import devanshi from '../assets/devanshi.jpg';
+import devanshi from '../assets/devanshi.jpeg';
 import dipansh from '../assets/dipanshprofile.png';
-import yagdeep from '../assets/yagyadeep.jpg';
+import yagdeep from '../assets/yagdeep.png';
 const Team = () => {
   const teamMembers = [
     {
