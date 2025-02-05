@@ -1,38 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Users } from 'lucide-react';
+import dance from '../assets/dance.jpeg';
+import nukkad from '../assets/nukkad.jpg';
+import singing from '../assets/singing.jpeg';
+import standup from '../assets/standup.jpeg';
 
 const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Tech Innovation Summit",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
+      title: "DANCE",
+      image: dance,
       date: "March 15, 2024",
       time: "9:00 AM - 5:00 PM",
       location: "Tech Convention Center",
-      description: "Join industry leaders for a day of insights into emerging technologies and future trends.",
+      description: "Groove to the beats, let your moves speak!💃🕺",
       attendees: 500
     },
     {
       id: 2,
-      title: "AI & Machine Learning Conference",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+      title: "STAND-UP COMEDY",
+      image: standup,
       date: "April 2, 2024",
       time: "10:00 AM - 4:00 PM",
       location: "Digital Innovation Hub",
-      description: "Explore the latest developments in AI and machine learning with expert speakers.",
+      description: "Laugh out loud—because life's too short for bad jokes! 🎤🤣",
       attendees: 300
     },
     {
       id: 3,
-      title: "Web3 Developer Meetup",
-      image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80",
+      title: "SINGING",
+      image: singing,
       date: "April 20, 2024",
       time: "2:00 PM - 6:00 PM",
       location: "Blockchain Center",
-      description: "Connect with Web3 developers and learn about the future of decentralized applications.",
+      description: "Hit the high notes, steal the show—your stage, your voice! 🎶✨",
       attendees: 200
+    },
+    {
+      id: 4,
+      title: "NUKKAD / THEATRE ACT",
+      image: nukkad,
+      // date: "April 20, 2024",
+      // time: "2:00 PM - 6:00 PM",
+      // location: "Blockchain Center",
+      description: "Street lights, strong voices—witness drama that sparks change! 🚀🎭",
+      // attendees: 200
     }
   ];
 
@@ -92,7 +106,7 @@ const Events = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{event.title}</h3>
                 <p className="text-gray-300 mb-4">{event.description}</p>
-                <div className="space-y-3">
+                {/* <div className="space-y-3">
                   <div className="flex items-center text-gray-300">
                     <Calendar className="w-5 h-5 mr-2 text-sky-400" />
                     <span>{event.date} • {event.time}</span>
@@ -105,7 +119,7 @@ const Events = () => {
                     <Users className="w-5 h-5 mr-2 text-sky-400" />
                     <span>{event.attendees} Attendees</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
