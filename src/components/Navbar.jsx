@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            {['Gallery', 'Events', 'Team', 'Sponsors', 'Contact'].map((item) => (
+            {['Gallery', 'Events','workshop', 'Team', 'Sponsors','Speaker', 'Contact'].map((item) => (
               <Link
                 key={item}
                 to={item.toLowerCase()}

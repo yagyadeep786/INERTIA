@@ -52,66 +52,77 @@ const Events = () => {
   };
 
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-b from-blue-900 to-sky-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="text-center mb-12"
-        >
-          <motion.h1 className="text-4xl font-bold text-white mb-4">
-            Upcoming Events
-          </motion.h1>
-          <motion.p className="text-gray-300 text-lg">
-            Join us at our upcoming events and be part of the tech revolution
-          </motion.p>
-        </motion.div>
-
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {events.map((event) => (
-            <motion.div
-              key={event.id}
-              variants={cardVariants}
-              whileHover={{ y: -5 }}
-              className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden"
-            >
-              <div className="relative h-48">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{event.title}</h3>
-                <p className="text-gray-300 mb-4">{event.description}</p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-gray-300">
-                    <Calendar className="w-5 h-5 mr-2 text-sky-400" />
-                    <span>{event.date} • {event.time}</span>
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <MapPin className="w-5 h-5 mr-2 text-sky-400" />
-                    <span>{event.location}</span>
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <Users className="w-5 h-5 mr-2 text-sky-400" />
-                    <span>{event.attendees} Attendees</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </div>
+   <div className="pt-20 min-h-screen bg-gradient-to-b from-blue-900 to-sky-900">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+           <motion.div
+             variants={containerVariants}
+             initial="hidden"
+             animate="visible"
+             className="text-center mb-12"
+           >
+             <motion.h1 className="text-4xl font-bold text-white mb-4">
+               Upcoming Events
+             </motion.h1>
+             <motion.p className="text-gray-300 text-lg">
+               Join us at our upcoming events and be part of the tech revolution
+             </motion.p>
+           </motion.div>
+   
+           <motion.div
+             variants={containerVariants}
+             initial="hidden"
+             animate="visible"
+             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+           >
+             {events.map((event) => (
+               <motion.div
+                 key={event.id}
+                 variants={cardVariants}
+                 whileHover={{ y: -5 }}
+                 className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden h-[40rem] box-border"
+               >
+                 <div className="relative h-48">
+                   <img
+                     src={event.image}
+                     alt={event.title}
+                     className="w-full h-full object-cover"
+                   />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                 </div>
+   
+                 <div className="p-6 flex flex-col justify-between h-[28rem]">
+                   <div>
+                     <h3 className="text-xl font-semibold text-white mb-2">
+                       {event.title}
+                     </h3>
+                     <p className="text-gray-300 mb-4">{event.description}</p>
+                     <div className="space-y-3">
+                       <div className="flex items-center text-gray-300">
+                         <Calendar className="w-5 h-5 mr-2 text-sky-400" />
+                         <span>
+                           {event.date} • {event.time}
+                         </span>
+                       </div>
+                       <div className="flex items-center text-gray-300">
+                         <MapPin className="w-5 h-5 mr-2 text-sky-400" />
+                         <span>{event.location}</span>
+                       </div>
+                       <div className="flex items-center text-gray-300">
+                         <Users className="w-5 h-5 mr-2 text-sky-400" />
+                         <span>{event.attendees} Attendees</span>
+                       </div>
+                     </div>
+                   </div>
+   
+                   <button className=" w-full bg-sky-500/80 hover:bg-sky-400 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 backdrop-blur-sm">
+                     Enroll Now
+                   </button>
+                 </div>
+               </motion.div>
+             ))}
+           </motion.div>
+         </div>
+       </div>
   );
 };
 

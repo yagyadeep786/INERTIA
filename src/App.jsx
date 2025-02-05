@@ -7,7 +7,8 @@ import Events from './pages/Events';
 import Team from './pages/Team';
 import Sponsors from './pages/Sponsors';
 import Contact from './pages/Contact';
-
+import Speaker from './pages/Speaker';
+import Workshop from './pages/Workshop';
 function App() {
   return (
     <Router>
@@ -20,6 +21,9 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/speaker" element={<Speaker />}/>
+          <Route path="/workshop" element={<Workshop />}/>
+
         </Routes>
       </div>
     </Router>
