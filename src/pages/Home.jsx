@@ -119,8 +119,6 @@ const Home = () => {
                 <div>
                   <p className="font-semibold"> Event</p>
                   <p className="text-sm text-gray-300">Feburary 21-22, 2025</p>
-                  <p className="font-semibold">Next Event</p>
-                  <p className="text-sm text-gray-300">To Be Announced</p>
                 </div>
               </div>
             </motion.div>
