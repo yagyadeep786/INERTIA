@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import devanshi from '../assets/devanshi.jpg';
 import dipansh from '../assets/dipanshprofile.png';
 import ajay from '../assets/aajay.jpeg';
+import sushil from '../assets/Sushil.png';
 const Speaker = () => {
   const teamMembers = [
     {
@@ -20,51 +21,14 @@ const Speaker = () => {
       id: 2,
       name: " Sushil Kumar Sharma ",
       role: "NTPC",
-      image: ajay, 
-      description: "A Sustainability Leader with 41+ years experience in Data Science, AI, Project Management, Energy Management, Energy Scenarios, Energy Transition, Renewable Energy, Green & Clean Fuels,  Sustainable Supply Chain, Biodiversity, CCUS, NetZero, Stakeholders Management, and Business Excellence. ",
+      image: sushil, 
+       description: "A Sustainability Leader with 41+ years experience in Data Science, AI, Project Management, Energy Management, Energy Scenarios, Energy Transition, Renewable Energy, Green & Clean Fuels,  Sustainable Supply Chain, Biodiversity, CCUS, NetZero, Stakeholders Management, and Business Excellence. ",
       github: "",
       linkedin: "https://www.linkedin.com/in/sksharma08/",
       email: ""
     },
-    {
-      id: 3,
-      name: " M G Choube  ",
-      role: "Hydro Power Plant",
-      image: ajay,
-      description: "",
-      linkedin: "",
-      email: ""
-    },
-     {
-      id: 4,
-      name: "  Satpal Patel ",
-      role: "MPEB",
-      image: ajay, 
-      description: "",
-      // github: "",
-      linkedin: "",
-      email: ""
-    },
-     {
-      id: 5,
-      name: " K C Sharma (NPCIL) ",
-      role: "NPCIL",
-      image: ajay, 
-      description: "Shri K.C Sharma, the Additional Chief Engineer, NPCIL",
-      // github: "",
-      linkedin: "https://www.linkedin.com/in/kc-sharma-1b83427/?originalSubdomain=in",
-      email: ""
-    },
-    {
-      id: 6,
-      name: " .... ",
-      // role: "Frontend Developer",
-      image: ajay, 
-      description: "",
-      // github: "",
-      linkedin: "",
-      email: ""
-    }
+   
+   
   ];
 
   const containerVariants = {
