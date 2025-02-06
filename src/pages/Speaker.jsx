@@ -3,48 +3,66 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import devanshi from '../assets/devanshi.jpg';
 import dipansh from '../assets/dipanshprofile.png';
-import yagdeep from '../assets/yagyadeep.jpg';
+import ajay from '../assets/aajay.jpeg';
 const Speaker = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "yagyadeep Ahirwar",
-      role: "WEB Developer",
-      image: yagdeep, 
-      description: "Full-stack developer with of experience in building scalable web applications. Passionate about clean code.",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/yagyadeep-ahirwar-dev/",
-      email: ""
-    },
-    {
-      id: 2,
-      name: "Devanshi Jain",
-      role: "Backend Developer",
-      image: devanshi, 
-
-      description: "Creative designer with a keen eye for detail and user experience. Specializes in creating intuitive and beautiful interfaces that users love.",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/devanshi-jain-9b2318268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      email: ""
-    },
-    {
-      id: 3,
-      name: "Kavya Sharma",
-      role: "Backend Developer",
-      image: "",
-      description: "creating the visual and interactive parts of a website or web application. They work on everything that users see and interact with directly in their browser.",
+      name: " Ajai Chowdhary ",
+      role: "HCL",
+      image: ajay, 
+      description: "Ajai Chowdhry is one of the six founding members of HCL. He is currently the Chairman-Board of Governors at National Institute of Foundry and Forge Technology, Ranchi, International Institute of Information Technology, and Naya Raipur. Chowdhry is also a member of India Semiconductor Mission's advisory board.",
       github: "",
       linkedin: "",
       email: ""
     },
     {
-      id: 4,
-      name: "Dipansh Gupta",
-      role: "Frontend Developer",
-      image: dipansh, 
-      description: "Experienced project manager with a track record of delivering successful tech events and workshops. Expert in agile methodologies.",
+      id: 2,
+      name: " Sushil Kumar Sharma ",
+      role: "NTPC",
+      image: ajay, 
+      description: "A Sustainability Leader with 41+ years experience in Data Science, AI, Project Management, Energy Management, Energy Scenarios, Energy Transition, Renewable Energy, Green & Clean Fuels,  Sustainable Supply Chain, Biodiversity, CCUS, NetZero, Stakeholders Management, and Business Excellence. ",
       github: "",
-      linkedin: "https://www.linkedin.com/in/dipansh-gupta-1006842a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/sksharma08/",
+      email: ""
+    },
+    {
+      id: 3,
+      name: " M G Choube  ",
+      role: "Hydro Power Plant",
+      image: ajay,
+      description: "",
+      linkedin: "",
+      email: ""
+    },
+     {
+      id: 4,
+      name: "  Satpal Patel ",
+      role: "MPEB",
+      image: ajay, 
+      description: "",
+      // github: "",
+      linkedin: "",
+      email: ""
+    },
+     {
+      id: 5,
+      name: " K C Sharma (NPCIL) ",
+      role: "NPCIL",
+      image: ajay, 
+      description: "Shri K.C Sharma, the Additional Chief Engineer, NPCIL",
+      // github: "",
+      linkedin: "https://www.linkedin.com/in/kc-sharma-1b83427/?originalSubdomain=in",
+      email: ""
+    },
+    {
+      id: 6,
+      name: " .... ",
+      // role: "Frontend Developer",
+      image: ajay, 
+      description: "",
+      // github: "",
+      linkedin: "",
       email: ""
     }
   ];
@@ -77,7 +95,7 @@ const Speaker = () => {
             Speakers
           </motion.h1>
           <motion.p className="text-gray-300 text-lg">
-          Crystal Clear Sound, Powerful Performance
+          CJoin us for a journey of inspiration, innovation, and impact—because your next big idea starts here!" 🚀
           </motion.p>
         </motion.div>
 
