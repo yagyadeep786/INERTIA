@@ -1,44 +1,79 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Users } from "lucide-react";
+import Wo1 from '../assets/Wo1.jpg';
+import Wo3 from '../assets/Wo3.jpg';
+import Wo5 from '../assets/Wo5.jpg';
+import Wo6 from '../assets/Wo6.png';
 
 const Workshop = () => {
   const events = [
     {
       id: 1,
-      title: "Tech WorkShop",
-      image:
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-      date: "Feburary 21, 2025",
+      title: "Aero Fabrication",
+      image: Wo1,
+      date: "February 21, 2025",
       time: "11:00 AM - 1:00 PM",
       location: "JASAN HALL",
       description:
-        "Join industry leaders for a day of insights into emerging technologies and future trends.",
+        "This workshop covers the basics of aerodynamics and aircraft design. Participants learn to design, fabricate, and test small-scale aircraft models, drones, or gliders using lightweight materials",
       attendees: 400,
     },
     {
       id: 2,
-      title: "Startup Launching",
+      title: "Electronics and Robotics",
       image:
         "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
-      date: "Feburary 22, 2025",
+      date: "February 22, 2025",
       time: "10:00 AM - 1:00 PM",
       location: "Jasan Hall",
       description:
-        "Introducing a new era of innovation! Join us as we launch new startup's of jabalpur, unveil groundbreaking ideas.",
+        "This workshop introduces the fundamentals of electronics and robotics, including circuit design, microcontrollers (Arduino, Raspberry Pi), and sensors.",
       attendees: 200,
     },
     {
       id: 3,
-      title: " Culture Showcase",
-      image:
-        "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80",
-      date: "Feburary 22, 2025",
+      title: "CAD and 3D Printing",
+      image: Wo3,
+      date: "February 22, 2025",
       time: "3:00 PM - 6:00 PM",
       location: "Assembly Hall",
       description:
-        "Get ready to lose yourself in the magic of melodies, electrifying dance moves, and soulful songs at Rhythm & Beats. Experience a vibrant fusion of cultures, emotions, and artistry as performers light up the stage with their passion.",
+        "Participants learn Computer-Aided Design (CAD) software like AutoCAD, SolidWorks, or Fusion 360 to create 3D models. The workshop also covers 3D printing techniques, material selection, and hands-on experience in designing and printing functional prototypes.",
       attendees: 600,
+    },
+    {
+      id: 4,
+      title: "Programming",
+      image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80",
+      date: "February 22, 2025",
+      time: "10:00 AM - 1:00 PM",
+      location: "Assembly Hall",
+      description:
+        "This workshop focuses on coding fundamentals in languages like Python, Java, or C++. It may cover algorithms, problem-solving techniques, web development, or artificial intelligence, depending on the focus. Hands-on projects help participants enhance their coding skills.",
+      attendees: 200,
+    },
+    {
+      id: 5,
+      title: "Astronomy",
+      image: Wo5,
+      date: "February 22, 2025",
+      time: "10:00 AM - 1:00 PM",
+      location: "Assembly Hall",
+      description:
+        "This session explores celestial bodies, telescope handling, astrophotography, and concepts like black holes, exoplanets, and the universe's expansion.",
+      attendees: 200,
+    },
+    {
+      id: 6,
+      title: "Racing",
+      image: Wo6,
+      date: "February 22, 2025",
+      time: "10:00 AM - 1:00 PM",
+      location: "Assembly Hall",
+      description:
+        "This workshop is designed for automobile enthusiasts, covering topics like vehicle dynamics, aerodynamics, and racing strategies. It may involve designing and testing small-scale race cars, go-kart fabrication, or simulation-based racing experiences.",
+      attendees: 200,
     },
   ];
 
@@ -70,7 +105,7 @@ const Workshop = () => {
             Upcoming Workshop
           </motion.h1>
           <motion.p className="text-gray-300 text-lg">
-            Join us at our upcoming events and be part of the tech revolution
+            Join us at our upcoming Workshop and be part of the tech revolution
           </motion.p>
         </motion.div>
 
@@ -119,10 +154,6 @@ const Workshop = () => {
                     </div>
                   </div>
                 </div>
-
-                <button className=" w-full bg-sky-500/80 hover:bg-sky-400 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 backdrop-blur-sm">
-                  Enroll Now
-                </button>
               </div>
             </motion.div>
           ))}
