@@ -59,9 +59,9 @@ const Navbar = () => {
                 {item}
               </Link>
             ))}
-            <button className="w-full bg-sky-500/80 hover:bg-sky-400 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 backdrop-blur-sm">
+{/*             <button className="w-full bg-sky-500/80 hover:bg-sky-400 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 backdrop-blur-sm">
               Register
-            </button>
+            </button> */}
           </div>
         </div>
       )}
