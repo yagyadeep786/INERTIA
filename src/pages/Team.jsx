@@ -18,8 +18,8 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "yagyadeep Ahirwar",
-      role: "Full Stack Web Developer",
+      name: "Mr. Yagyadeep Ahirwar",
+      role: "Team Leader",
       image: yagdeep, 
       description: "Full-stack developer with experience in building scalable web applications. Passionate about clean code.",
       github: "",
@@ -38,17 +38,7 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Kavya Sharma",
-      role: "Backend Developer",
-      image: "",
-      description: "Creating the visual and interactive parts of a website.",
-      github: "",
-      linkedin: "",
-      email: ""
-    },
-    {
-      id: 4,
-      name: "Dipansh Gupta",
+      name: "Mr. Dipansh Gupta",
       role: "MERN Stack Developer",
       image: dipansh, 
       description: "Experienced project manager with a track record of successful tech events.",
@@ -57,7 +47,7 @@ const Team = () => {
       email: ""
     },
     {
-      id: 5,
+      id: 4,
       name: "Mr. Nihal Patidar",
       role: "Frontend Developer",
       image: nihal, 
@@ -65,7 +55,18 @@ const Team = () => {
       github: "",
       linkedin: "https://www.linkedin.com/in/nihal-patidar/",
       email: ""
-    }
+    },
+    {
+      id: 5,
+      name: "Kavya Sharma",
+      role: "Backend Developer",
+      image: "",
+      description: "Creating the visual and interactive parts of a website.",
+      github: "",
+      linkedin: "",
+      email: ""
+    },
+    
   ];
 
   const coordinatorTeam = [
