@@ -151,7 +151,6 @@ const Home = () => {
                 className="text-4xl font-bold text-white"
               >
                 About <span className="text-sky-400">INERTIA 2025</span>
-                About <span className="text-sky-400">Inertia 2025</span>
               </motion.h2>
               <motion.p 
                 variants={itemVariants}
