@@ -56,16 +56,16 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/nihal-patidar/",
       email: ""
     },
-    {
-      id: 5,
-      name: "Kavya Sharma",
-      role: "Backend Developer",
-      image: "",
-      description: "Creating the visual and interactive parts of a website.",
-      github: "",
-      linkedin: "",
-      email: ""
-    },
+    // {
+    //   id: 5,
+    //   name: "Kavya Sharma",
+    //   role: "Backend Developer",
+    //   image: "",
+    //   description: "Creating the visual and interactive parts of a website.",
+    //   github: "",
+    //   linkedin: "",
+    //   email: ""
+    // },
     
   ];
 
@@ -159,30 +159,17 @@ const Team = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {teamMembers.map((member) => (
-            <motion.div key={member.id} className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <div className="relative h-full min-h-[300px]">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-                    <span className="px-3 py-1 bg-sky-500 text-white rounded-full text-sm font-medium">{member.role}</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-300 mb-6">{member.description}</p>
-                  <div className="flex space-x-4">
-                    <motion.a href={member.linkedin} className="text-gray-300 hover:text-sky-400">
-                      <Linkedin className="w-5 h-5" />
-                    </motion.a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+           <div key={member.id} className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden p-6 flex items-center">
+           <img
+             src={member.image || 'https://via.placeholder.com/150'}
+             alt={member.name}
+             className="w-20 h-20 rounded-full object-cover mr-4"
+           />
+           <div>
+             <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
+             <span className="px-3 py-1 bg-sky-500 text-white rounded-full text-sm font-medium">{member.role}</span>
+           </div>
+         </div>
           ))}
         </div>
       </div>

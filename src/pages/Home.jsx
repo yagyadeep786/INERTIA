@@ -6,6 +6,7 @@ import CountdownTimer from '../components/CountdownTimer';
 import Vedio1 from '../assets/inertia4343.mov'
 import techEventImage from "../assets/7.png"; 
 
+
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -82,15 +83,8 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-sky-500 hover:bg-sky-400 text-white px-8 py-3 rounded-lg font-semibold flex items-center space-x-2 group"
               >
-                <span>Get Started</span>
+                <a href='https://forms.gle/XHxauV5sJtwuC7Dp7'><span>Register Now</span></a>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-sky-400 text-sky-400 hover:bg-sky-400/10 px-8 py-3 rounded-lg font-semibold"
-              >
-                Learn More
               </motion.button>
             </motion.div>
           </div>
