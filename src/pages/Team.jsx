@@ -13,9 +13,16 @@ import T4  from '../assets/T1 (3).png';
 import T5  from '../assets/T9.png';
 import T6  from '../assets/T7.png';
 import Pandey  from '../assets/PANDEY.png';
+import cse_hod from "../assets/cse_hod.png";
 
 const Team = () => {
   const teamMembers = [
+    {
+      id: 0,
+      name: "Prof. Jitendra Singh Thakur Sir (HOD of CSE)",
+      role: "Mentor",
+      image: cse_hod, 
+    },
     {
       id: 1,
       name: "Mr. Yagyadeep Ahirwar",

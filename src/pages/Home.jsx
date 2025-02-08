@@ -86,6 +86,7 @@ const Home = () => {
                 <a href='https://forms.gle/XHxauV5sJtwuC7Dp7'><span>Register Now</span></a>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
+              
             </motion.div>
           </div>
 
