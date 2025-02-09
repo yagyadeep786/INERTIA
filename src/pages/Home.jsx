@@ -1,13 +1,62 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Calendar, Users, Award, Play, CheckCircle } from 'lucide-react';
+import { ArrowRight, Sparkles, Calendar, Users, Award, Play, CheckCircle,MapPin } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 
 import Vedio1 from '../assets/inertia4343.mov'
 import techEventImage from "../assets/7.png"; 
 
+import Wo1 from '../assets/Wo1.jpg';
+import Wo3 from '../assets/Wo3.jpg';
+import free from "../assets/free.jpg"
+import workshop1 from "../assets/workshop1.jpg"
+import logo from "../assets/2.png"
 
 const Home = () => {
+
+   const events = [
+      {
+        
+        id: 1,
+        title: "INERTIA X ESPORT TOURNAMENT (SQUAD,DUO,SOLO)",
+        image: free,
+        date: "Disclose Soon..",
+        time: "TIME: 12:00 PM - 5:00 PM (2:00 PM to 3:00 PM BREAK)",
+        location: "JASAN HALL",
+        description:
+          "🎮 Calling all gamers! Get ready for an adrenaline-pumping Free Fire & BGMI Esports Tournament at INERTIA 2025. Compete against the best, showcase your skills, and fight for glory in an electrifying battle royale showdown!",
+        attendees: 400,
+        link:"/freefire",
+        price:200,
+      },
+      {
+        id: 2,
+        title: "WORKSHOP ON BRIDS'25",
+        image: workshop1,
+        date: "21-22 FEB 2025",
+        time: "Disclose Soon..",
+        location: "Jasan Hall",
+        description:
+          "Join us for an insightful BRIDS 25 workshop led by Dr. Praveen Kumar Sharma, a renowned Ph.D. holder from NIT Durgapur. This workshop will cover key concepts, latest research developments, and practical applications related to BIRDS 25, offering participants a unique learning experience.",
+        attendees: 350,
+        link:"/brids",
+        price:350,
+      },
+      {
+        id: 3,
+        title: "Register for INERTIA 2025",
+        image: logo,
+        date: "February 22, 2025",
+        time: "",
+        location: "Assembly Hall",
+        description:
+          "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional networking experiences that redefine the future of technology.",
+        attendees: 600,
+        link:"",
+        price:0,
+      },
+    ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -21,6 +70,11 @@ const Home = () => {
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -83,7 +137,7 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-sky-500 hover:bg-sky-400 text-white px-8 py-3 rounded-lg font-semibold flex items-center space-x-2 group"
               >
-                <a href='https://forms.gle/XHxauV5sJtwuC7Dp7'><span>Register Now</span></a>
+                <a href='#eve'><span>Register Open</span></a>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
               
@@ -130,6 +184,81 @@ const Home = () => {
         >
           <CountdownTimer />
         </motion.div>
+
+        <div className="pt-20 min-h-screen bg-gradient-to-b from-blue-900 to-sky-900" id='eve'>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="text-center mb-12"
+        >
+          <motion.h1 className="text-4xl font-bold text-white mb-4">
+            Registration Open For..
+          </motion.h1>
+          <motion.p className="text-gray-300 text-lg">
+            Limited seats are available in the event.
+          </motion.p>
+        </motion.div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {events.map((event) => (
+            <motion.div
+              key={event.id}
+              variants={cardVariants}
+              whileHover={{ y: -5 }}
+              className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden h-[40rem] box-border"
+            >
+              <div className="relative h-48">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              </div>
+              <div>
+              <div className="p-6 flex flex-col items-center justify-between h-[28rem]">
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {event.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4">{event.description}</p>
+                  <div className="space-y-3">
+                    <div className="flex items-center text-gray-300">
+                      <Calendar className="w-5 h-5 mr-2 text-sky-400" />
+                      <span>
+                        {event.date} • {event.time}
+                      </span>
+                    </div>
+                    <div className="flex items-center text-gray-300">
+                      <MapPin className="w-5 h-5 mr-2 text-sky-400" />
+                      <span>{event.location}</span>
+                    </div>
+                    <div className="flex items-center text-gray-300">
+                      <Users className="w-5 h-5 mr-2 text-sky-400" />
+                      <span>{event.attendees} Attendees</span>
+                    </div>
+                  </div>
+
+                </div>
+                <a href={event.link}><button className='w-[20rem] cursor-pointer p-1 text-white font-bold bg-blue-500 rounded-sm'>Enroll Now</button></a>
+              </div>
+
+
+
+
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </div>
 
         {/* About Section */}
         <motion.div

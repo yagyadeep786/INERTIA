@@ -9,6 +9,8 @@ import Sponsors from './pages/Sponsors';
 import Contact from './pages/Contact';
 import Speaker from './pages/Speaker';
 import Workshop from './pages/Workshop';
+import EsportsTournament from './pages/EsportsTournament';
+import WorkshopBRIDS25 from './pages/WorkshopBRIDS25';
 function App() {
   return (
     <Router>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/speaker" element={<Speaker />}/>
           <Route path="/workshop" element={<Workshop />}/>
+          <Route path="/freefire" element={<EsportsTournament />} />
+          <Route path="/brids" element={<WorkshopBRIDS25 />} />
 
         </Routes>
       </div>

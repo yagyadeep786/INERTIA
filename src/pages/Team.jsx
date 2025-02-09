@@ -25,7 +25,7 @@ const Team = () => {
     },
     {
       id: 1,
-      name: "Mr. Yagyadeep Ahirwar",
+      name: "Yagyadeep Ahirwar",
       role: "Team Leader",
       image: yagdeep, 
       description: "Full-stack developer with experience in building scalable web applications. Passionate about clean code.",
@@ -45,7 +45,7 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Mr. Dipansh Gupta",
+      name: "Dipansh Gupta",
       role: "MERN Stack Developer",
       image: dipansh, 
       description: "Experienced project manager with a track record of successful tech events.",
@@ -55,7 +55,7 @@ const Team = () => {
     },
     {
       id: 4,
-      name: "Mr. Nihal Patidar",
+      name: "Nihal Patidar",
       role: "Frontend Developer",
       image: nihal, 
       description: "Expert in agile methodologies with experience in project management.",
