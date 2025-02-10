@@ -30,11 +30,13 @@ const WorkshopBRIDS25 = () => {
         <h2 className="text-xl font-bold text-purple-400">🔹 Who should attend? Students of JEC</h2>
       </div>
 
+<a href="https://e-ticket-srt.netlify.app/form/67a8f851eb4ebb3b772d8be8">
       <button
       className="px-6 py-3 rounded-lg text-white font-bold text-lg bg-gray-700 hover:bg-gray-600 transition-all duration-300 shadow-lg mt-2 cursor-pointer"
     >
       Enroll Now
     </button>
+    </a>
       <div className="mt-4 text-center">
         <h2 className="text-xl font-bold text-yellow-400">📢 Limited seats available! Register now to secure your spot.</h2>
         <p className="mt-2">For registration and inquiries, contact: +91 6352433898</p>

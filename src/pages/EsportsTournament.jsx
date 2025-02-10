@@ -114,11 +114,13 @@ const EsportsTournament = () => {
         </p>
       </div>
 
+ <a href="https://e-ticket-srt.netlify.app/form/67a8f775eb4ebb3b772d8bd6">
     <button
       className="px-6 py-3 rounded-lg text-white font-bold text-lg bg-gray-700 hover:bg-gray-600 transition-all duration-300 shadow-lg mt-2 cursor-pointer"
     >
       Enroll Now
     </button>
+    </a>
     </div>
   );
 };

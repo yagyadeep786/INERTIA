@@ -52,7 +52,7 @@ const Home = () => {
         description:
           "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional networking experiences that redefine the future of technology.",
         attendees: 600,
-        link:"",
+        link:"https://e-ticket-srt.netlify.app/form/67a99f5642cb8c5b180680f9",
         price:0,
       },
     ];
