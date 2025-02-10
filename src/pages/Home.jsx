@@ -20,7 +20,7 @@ const Home = () => {
         id: 1,
         title: "INERTIA X ESPORT TOURNAMENT (SQUAD,DUO,SOLO)",
         image: free,
-        date: "Disclose Soon..",
+        date: "21-22 FEB 2025",
         time: "TIME: 12:00 PM - 5:00 PM (2:00 PM to 3:00 PM BREAK)",
         location: "JASAN HALL",
         description:
@@ -137,7 +137,7 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-sky-500 hover:bg-sky-400 text-white px-8 py-3 rounded-lg font-semibold flex items-center space-x-2 group"
               >
-                <a href='#eve'><span>Register Open</span></a>
+                <a href='#eve'><span>Registration Open</span></a>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
               
