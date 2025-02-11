@@ -14,7 +14,7 @@ const Workshop = () => {
       image: Wo1,
       date: "February 21, 2025",
       time: "11:00 AM - 1:00 PM",
-      location: "JASAN HALL",
+      location: "JASHAN HALL",
       description:
         "This workshop covers the basics of aerodynamics and aircraft design. Participants learn to design, fabricate, and test small-scale aircraft models, drones, or gliders using lightweight materials",
       attendees: 400,
@@ -26,7 +26,7 @@ const Workshop = () => {
         "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
       date: "February 22, 2025",
       time: "10:00 AM - 1:00 PM",
-      location: "Jasan Hall",
+      location: "JASHAN Hall",
       description:
         "This workshop introduces the fundamentals of electronics and robotics, including circuit design, microcontrollers (Arduino, Raspberry Pi), and sensors.",
       attendees: 200,

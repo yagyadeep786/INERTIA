@@ -22,7 +22,7 @@ const Home = () => {
         image: free,
         date: "21-22 FEB 2025",
         time: "TIME: 12:00 PM - 5:00 PM (2:00 PM to 3:00 PM BREAK)",
-        location: "JASAN HALL",
+        location: "JASHAN HALL",
         description:
           "🎮 Calling all gamers! Get ready for an adrenaline-pumping Free Fire & BGMI Esports Tournament at INERTIA 2025. Compete against the best, showcase your skills, and fight for glory in an electrifying battle royale showdown!",
         attendees: 400,
@@ -35,7 +35,7 @@ const Home = () => {
         image: workshop1,
         date: "21-22 FEB 2025",
         time: "Disclose Soon..",
-        location: "Jasan Hall",
+        location: "JASHAN Hall",
         description:
           "Join us for an insightful BRIDS 25 workshop led by Dr. Praveen Kumar Sharma, a renowned Ph.D. holder from NIT Durgapur. This workshop will cover key concepts, latest research developments, and practical applications related to BIRDS 25, offering participants a unique learning experience.",
         attendees: 350,
