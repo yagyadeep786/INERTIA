@@ -27,7 +27,7 @@ const Home = () => {
           "🎮 Calling all gamers! Get ready for an adrenaline-pumping Free Fire & BGMI Esports Tournament at INERTIA 2025. Compete against the best, showcase your skills, and fight for glory in an electrifying battle royale showdown!",
         attendees: 400,
         link:"/freefire",
-        price:200,
+        price:"Rs.50",
       },
       {
         id: 2,
@@ -40,7 +40,7 @@ const Home = () => {
           "Join us for an insightful BRIDS 25 workshop led by Dr. Praveen Kumar Sharma, a renowned Ph.D. holder from NIT Durgapur. This workshop will cover key concepts, latest research developments, and practical applications related to BIRDS 25, offering participants a unique learning experience.",
         attendees: 350,
         link:"/brids",
-        price:350,
+        price:"Rs.300",
       },
       {
         id: 3,
@@ -53,7 +53,7 @@ const Home = () => {
           "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional networking experiences that redefine the future of technology.",
         attendees: 600,
         link:"https://e-ticket-srt.netlify.app/form/67a99f5642cb8c5b180680f9",
-        price:0,
+        price:"free",
       },
     ];
 
@@ -247,7 +247,7 @@ const Home = () => {
                   </div>
 
                 </div>
-                <a href={event.link}><button className='w-[20rem] cursor-pointer p-1 text-white font-bold bg-blue-500 rounded-sm'>Enroll Now</button></a>
+                <a href={event.link}><button className='w-[20rem] cursor-pointer p-1 text-white font-bold bg-blue-500 rounded-sm'>Enroll Now ({event.price})</button></a>
               </div>
 
 
