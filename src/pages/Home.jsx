@@ -212,7 +212,7 @@ const Home = () => {
               key={event.id}
               variants={cardVariants}
               whileHover={{ y: -5 }}
-              className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden h-[40rem] box-border"
+              className="bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden box-border"
             >
               <div className="relative h-48">
                 <img
@@ -223,7 +223,7 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div>
-              <div className="p-6 flex flex-col items-center justify-between h-[28rem]">
+              <div className="p-6 flex flex-col items-center justify-between">
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
                     {event.title}
@@ -247,7 +247,11 @@ const Home = () => {
                   </div>
 
                 </div>
-                <a href={event.link}><button className='w-[20rem] cursor-pointer p-1 text-white font-bold bg-blue-500 rounded-sm'>Enroll Now ({event.price})</button></a>
+                <a href={event.link} className="w-full">
+  <button className=" sm:w-auto px-20 mt-2 py-2 text-white font-bold bg-blue-500 rounded-sm hover:bg-blue-600 transition duration-300">
+    Enroll Now ({event.price})
+  </button>
+</a>
               </div>
 
 
