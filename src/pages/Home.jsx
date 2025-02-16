@@ -15,6 +15,19 @@ import logo from "../assets/2.png"
 const Home = () => {
 
    const events = [
+          {
+        id: 3,
+        title: "Register for INERTIA 2025",
+        image: logo,
+        date: "February 22, 2025",
+        time: "",
+        location: "Assembly Hall",
+        description:
+          "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional networking experiences that redefine the future of technology.",
+        attendees: 600,
+        link:"https://e-ticket-srt.netlify.app/form/67a99f5642cb8c5b180680f9",
+        price:"free",
+      },
       {
         
         id: 1,
@@ -42,19 +55,7 @@ const Home = () => {
         link:"/brids",
         price:"Rs.300",
       },
-      {
-        id: 3,
-        title: "Register for INERTIA 2025",
-        image: logo,
-        date: "February 22, 2025",
-        time: "",
-        location: "Assembly Hall",
-        description:
-          "INERTIA 2025 is the ultimate technology workshop uniting trailblazing industry experts, visionary innovators, and passionate tech enthusiasts. Across two dynamic days, immerse yourself in groundbreaking sessions, interactive workshops, and exceptional networking experiences that redefine the future of technology.",
-        attendees: 600,
-        link:"https://e-ticket-srt.netlify.app/form/67a99f5642cb8c5b180680f9",
-        price:"free",
-      },
+  
     ];
 
   const containerVariants = {
