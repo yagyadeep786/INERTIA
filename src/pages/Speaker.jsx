@@ -27,7 +27,26 @@ const Speaker = () => {
       linkedin: "https://www.linkedin.com/in/sksharma08/",
       email: ""
     },
-   
+   {
+      id: 3,
+      name: " Shrawan Kumar Singh (NHAI)",
+      role: "Regional officer",
+      image: "", 
+       description: "A Sustainability Leader with 41+ years experience in Data Science, AI, Project Management, Energy Management, Energy Scenarios, Energy Transition, Renewable Energy, Green & Clean Fuels,  Sustainable Supply Chain, Biodiversity, CCUS, NetZero, Stakeholders Management, and Business Excellence. ",
+      github: "",
+      linkedin: "",
+      email: ""
+    },
+    {
+      id: 4,
+      name: " M.G. Chobey",
+      role: "Retd Eng. in chief",
+      image: "", 
+       description: "M.G. Chobey’s "Sustaineco" speech is an inspiring discourse on the importance of sustainable living and environmental conservation. Highlighting the urgent need for eco-friendly practices, he emphasizes the role of individuals, businesses, and governments in fostering a greener future.",
+      github: "",
+      linkedin: "",
+      email: ""
+    },
    
   ];
 
