@@ -56,7 +56,7 @@ const Team = () => {
     {
       id: 4,
       name: "Nihal Patidar",
-      role: "Frontend Developer",
+      role: "MERN Developer",
       image: nihal, 
       description: "Expert in agile methodologies with experience in project management.",
       github: "",
