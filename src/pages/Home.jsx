@@ -43,6 +43,19 @@ const Home = () => {
         link:"/freefire",
         price:"Rs.50",
       },
+          {
+        id: 4,
+        title: "CodeKumbh 2025 – THE ULTIMATE OVERNIGHT HACKATHON!",
+        image: hackathon,
+        date: "20-21 FEB 2025",
+        time: "Disclose Soon..",
+        location: "JASHAN Hall",
+        description:
+          "(4-5 Members in team, 1 girl necessary) Code, Create, Conquer! Get ready for CODEKUMBH 2025, an overnight hackathon where creativity, problem-solving, and collaboration takes center stage. Compete with like-minded peers, build impactful solutions, and push your coding limits to new heights!.",
+        attendees: 350,
+        link:"https://codekumbh.jlug.club/",
+        price:"Rs.300",
+      },
       {
         id: 2,
         title: "WORKSHOP ON BRIDS'25",
@@ -54,19 +67,6 @@ const Home = () => {
           "Join us for an insightful BRIDS 25 workshop led by Dr. Praveen Kumar Sharma, a renowned Ph.D. holder from NIT Durgapur. This workshop will cover key concepts, latest research developments, and practical applications related to BIRDS 25, offering participants a unique learning experience.",
         attendees: 350,
         link:"/brids",
-        price:"Rs.300",
-      },
-      {
-        id: 4,
-        title: "CodeKumbh 2025 – THE ULTIMATE OVERNIGHT HACKATHON!",
-        image: hackathon,
-        date: "20-21 FEB 2025",
-        time: "Disclose Soon..",
-        location: "JASHAN Hall",
-        description:
-          "(4-5 Members in team, 1 girl necessary) Code, Create, Conquer! Get ready for CODEKUMBH 2025, an overnight hackathon where creativity, problem-solving, and collaboration takes center stage. Compete with like-minded peers, build impactful solutions, and push your coding limits to new heights!.",
-        attendees: 350,
-        link:"https://codekumbh.jlug.club/",
         price:"Rs.300",
       },
 
