@@ -42,7 +42,7 @@ const Speaker = () => {
       name: " M.G. Chobey",
       role: "Retd Eng. in chief",
       image: "", 
-       description: "M.G. Chobey’s "Sustaineco" speech is an inspiring discourse on the importance of sustainable living and environmental conservation. Highlighting the urgent need for eco-friendly practices, he emphasizes the role of individuals, businesses, and governments in fostering a greener future.",
+       description: "M.G. Chobey’s Sustaineco speech is an inspiring discourse on the importance of sustainable living and environmental conservation. Highlighting the urgent need for eco-friendly practices, he emphasizes the role of individuals, businesses, and governments in fostering a greener future.",
       github: "",
       linkedin: "",
       email: ""
