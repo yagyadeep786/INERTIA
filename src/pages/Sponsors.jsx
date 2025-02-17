@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Globe, MapPin, ExternalLink } from 'lucide-react';
 import Sponse1 from '../assets/funingo.jpg';
 import Sponse2 from '../assets/Triumph-Motorcycles-Logo.png'
+import Sponse3 from '../assets/rkbooks.jpg'
+
 const Sponsors = () => {
   const sponsors = [
     {
@@ -20,6 +22,22 @@ const Sponsors = () => {
       description: "Frontier Triumph Jabalpur is part of Frontier Motors group and provides customers with first-class service in and around Jabalpur, Madhya Pradesh. This stylish store is conveniently located near Madan Mahal Railway station, providing customers with the full range of Triumph services including new bike sales, service, parts, clothing, and accessories.",
       website: "https://www.triumphmotorcycles.in",
       address: "140/1 Amanpur Mouja, Near Dasmesh Dwar, Nagpur Rd, Madan Mahal",
+    },
+    {
+      id: 3,
+      name: "RK Books and Stationary",
+      image: rkbooks,
+      description: "RK Book and Stationery in Ranjhi, Jabalpur, is your one-stop destination for all academic and office supply needs. Offering a wide range of books, notebooks, pens, art materials, and school essentials, the store ensures quality products at affordable prices.",
+      website: "",
+      address: "Ranjhi Jabalpur",
+    },
+  {
+      id: 4,
+      name: "Agarwal Auto CAD",
+      image: "",
+      description: "Agrawal Auto CAD in Jabalpur is a leading service provider specializing in AutoCAD design, drafting, and training. With expertise in architectural, mechanical, and civil engineering designs, the firm delivers high-quality CAD solutions tailored to client needs.",
+      website: "",
+      address: "Ranjhi Jabalpur",
     },
   ];
 
