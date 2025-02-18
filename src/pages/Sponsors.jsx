@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Globe, MapPin, ExternalLink } from 'lucide-react';
 import Sponse1 from '../assets/funingo.jpg';
 import Sponse2 from '../assets/Triumph-Motorcycles-Logo.png'
+import Sponse3 from '../assets/sponse3.jpeg';
+import Sponse4 from '../assets/rkbook.jpg';
+import Sponse5 from '../assets/nallaAngel.jpg';
 const Sponsors = () => {
   const sponsors = [
     {
@@ -20,6 +23,30 @@ const Sponsors = () => {
       description: "Frontier Triumph Jabalpur is part of Frontier Motors group and provides customers with first-class service in and around Jabalpur, Madhya Pradesh. This stylish store is conveniently located near Madan Mahal Railway station, providing customers with the full range of Triumph services including new bike sales, service, parts, clothing, and accessories.",
       website: "https://www.triumphmotorcycles.in",
       address: "140/1 Amanpur Mouja, Near Dasmesh Dwar, Nagpur Rd, Madan Mahal",
+    },
+    {
+      id: 3,
+      name: "RK BOOKS and STATIONERS",
+      image: Sponse4,
+      description: "All kinds of books and stationery. Govt. General order supplier. Enagic Independent Distributor. 8, LNY market main road Ranjhi",
+      website: "https://www.instagram.com/rkb.jbp/?hl=en",
+      address: "Ranjhi Jabalpur ",
+    },
+    {
+      id: 4,
+      name: "AGRAWAL AUTO CAD",
+      image: Sponse3,
+      description: "Best autocade training center in all madhya Pradesh only is Agrawal Computer Education in jabalpur",
+      website: "https://apnabusinesscard.com/Agrawal-Computer-Education",
+      address: "Gol bazar , Jabalpur",
+    },
+    {
+      id: 5,
+      name: "Nalla Angel",
+      image: Sponse5,
+      description: "eSports:popular well known Youtuber , Nalla Angel (yt 1.8m )",
+      website: "https://www.instagram.com/nalla__angel?igsh=MThuYnlteXBlbXc2eQ==",
+      address: "Youtuber",
     },
   ];
 
